@@ -1,6 +1,6 @@
 #pragma once
 
-#define MAX_LEIGHT 50
+#define MAX_LEIGHT 30
 #define MAX_RECORD 20
 #define GROUP_COUNT 4
 
@@ -23,6 +23,7 @@ union Group {
 	};
 	unsigned char flag;
 };
+
 
 struct Work {
 	char company[MAX_LEIGHT];

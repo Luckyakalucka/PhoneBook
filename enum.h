@@ -5,7 +5,8 @@ enum menu {
     PRINT_ONE = 1,
     ADD,
     DEL,
-    EDIT
+    EDIT,
+    FIND
 
 };
 
