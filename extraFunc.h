@@ -1,12 +1,23 @@
 #pragma once
 
-Record* getMemory(int countRecords, Record* records);
-int setRecordField(int num, int choice, Record* records);
-int findIdBySurname(char* surname, int countRecords, Record* records);
-int sortRecordsBySurname(int countRecords, Record* records);
-int menu();
-int searchString(char* str, char* substr);
-int strlen(char* str);
-int checkString(char* s1, char* s2);
+#define VK_RETURN    13
+#define VK_BACKSPACE  8
+#define VK_ESC		 27
 
-int getGroupShort(int id, char* str, Record* records);
+// findIndexByStaticId(int countRecords, Record* records):
+int findIndexByStaticId(int countRecords, Record* records);
+
+// sortRecordsBySurname(int countRecords, Record* records):
+int sortRecordsBySurname(int countRecords, Record* records);
+
+// menu():
+int menu();
+
+// searchString(char* str, char* substr):
+int searchString(char* str, char* substr);
+
+// getGroupShort(char* str, Record* record):
+int getGroupShort(char* str, Record* record);
+
+
+int customInput_s(const char* title, char* value, int valueSize, int requiredFlag, char leftBorder, char rightBorder, int excpetFlag, char leftExceptBorder, char rightExceptBorder, char* additionalsChar);
